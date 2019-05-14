@@ -1,0 +1,52 @@
+DROP TABLE IF EXISTS Role;
+DROP TABLE IF EXISTS Personne;
+DROP TABLE IF EXISTS Auteur;
+DROP TABLE IF EXISTS Editeur;
+DROP Table IF EXISTS Langue;
+DROP Table IF EXISTS Genre;
+DROP TABLE IF EXISTS Livre;
+
+CREATE TABLE `Role` (
+	`id`	INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`libelle`	VARCHAR(150) NOT NULL
+);
+CREATE TABLE `Personne` (
+	`id`	INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`nom`	VARCHAR(150) NOT NULL,
+	`prenom`	VARCHAR(150)
+);
+
+CREATE TABLE `Langue` (
+	`id`	INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`libelle`	VARCHAR(150) NOT NULL
+);
+
+CREATE TABLE `Genre` (
+	`id`	INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`libelle`	VARCHAR(150) NOT NULL UNIQUE
+);
+CREATE TABLE `Editeur` (
+	`id`	INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`libelle`	VARCHAR(150) NOT NULL
+);
+CREATE TABLE `Livre` (
+	`isbn`	VARCHAR(15) NOT NULL,
+	`titre`	VARCHAR(500) NOT NULL,
+	`editeur`	INTEGER NOT NULL,
+	`annee`	INTEGER,
+	`genre`	INTEGER,
+	`langue`	INTEGER,
+	`nbpages`	INTEGER
+	PRIMARY KEY(isbn),
+	FOREIGN KEY fk_LivreEditeur(editeur) REFERENCES Editeur(id),
+	FOREIGN KEY fk_LivreGenre(genre) REFERENCES Genre(id),
+	FOREIGN KEY fk_LivreLangue(langue) REFERENCES Langue(id)
+);
+CREATE TABLE `Auteur` (
+	`idPersonne`	INTEGER NOT NULL,
+	`idLivre`	VARCHAR(15) NOT NULL,
+	`idRole`	INTEGER NOT NULL,
+	FOREIGN KEY fk_AuteurPersonne(idPersonne) REFERENCES Personne(id),
+	FOREIGN KEY fk_AuteurLivre(idLivre) REFERENCES Livre(isbn),
+	FOREIGN KEY fk_AuteurRole(idRole) REFERENCES Role(id)
+);
