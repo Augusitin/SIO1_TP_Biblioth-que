@@ -36,7 +36,7 @@ CREATE TABLE `Livre` (
 	`annee`	INTEGER,
 	`genre`	INTEGER,
 	`langue`	INTEGER,
-	`nbpages`	INTEGER
+	`nbpages`	INTEGER,
 	PRIMARY KEY(isbn),
 	FOREIGN KEY fk_LivreEditeur(editeur) REFERENCES Editeur(id),
 	FOREIGN KEY fk_LivreGenre(genre) REFERENCES Genre(id),
