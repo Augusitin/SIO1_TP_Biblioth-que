@@ -29,7 +29,7 @@
 		</ul>
 
 		<ul class="bloc2">
-				<img src="">
+				<img src="img/2.jpg">
 			<li class="titlelivre">
 				php
 			</li>
@@ -44,6 +44,7 @@
 		</ul>
 
 		<ul class="bloc3">
+				<img src="img/3.jpg">
 			<li class="titlelivre">
 				php
 			</li>
@@ -58,6 +59,7 @@
 		</ul>
 
 		<ul class="bloc4">
+				<img src="img/4.jpg">
 			<li class="titlelivre">
 				php
 			</li>
