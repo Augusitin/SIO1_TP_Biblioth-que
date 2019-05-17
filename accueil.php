@@ -9,68 +9,30 @@
 
 <body>
 	<header>
-	<h1>Ma bibliothèque</h1>
+		<h1>Ma bibliothèque</h1>
 	</header>
+	
+	
 	<main>
-		<ul class="bloc1">
-			<img src="img/1.jpg">
-			<li class="titlelivre">
-				php
 
-			</li>
-			<li class="auteur">
-				<p>Ecrit par</p>
-				php
-			</li>
-			<li class="editeur">
-				<p>Edité par</p>
-				php
-			</li>
-		</ul>
-
-		<ul class="bloc2">
-				<img src="img/2.jpg">
-			<li class="titlelivre">
-				php
-			</li>
-			<li class="auteur">
-				<p>Ecrit par</p>
-				php
-			</li>
-			<li class="editeur">
-				<p>Edité par</p>
-				php
-			</li>
-		</ul>
-
-		<ul class="bloc3">
-				<img src="img/3.jpg">
-			<li class="titlelivre">
-				php
-			</li>
-			<li class="auteur">
-				<p>Ecrit par</p>
-				php
-			</li>
-			<li class="editeur">
-				<p>Edité par</p>
-				php
-			</li>
-		</ul>
-
-		<ul class="bloc4">
-				<img src="img/4.jpg">
-			<li class="titlelivre">
-				php
-			</li>
-			<li class="auteur">
-				<p>Ecrit par</p>
-				php
-			</li>
-			<li class="editeur">
-				<p>Edité par</p>
-				php
-			</li>
-		</ul>
+		<h2> Accueil </h2>
+		
+		<h3> Sélectionner une option : </h3>
+		
+		<ul id="menu_accueil">
+			<li> <a href="backend_affichage.php"> Tous les livre </a> </li>
+			<li> <a> Rechercher </a> </li>
+			<li> <a> Modifier </a> </li>
+			<li> <a> Supprimer </a> </li>
+			<li> <a> Historique </a> </li>
+		</ul>	
+	
 	</main>
+	
+	<footer>
+		Exercice PHP du BTS SIO1 <br>
+		Ecole IPSSI (Montévrain) <br>
+		Par Augustin LOR <br>
+	</footer>
+	
 </body>

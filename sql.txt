@@ -1,0 +1,31 @@
+INSERT INTO `auteur`(`idPersonne`, `idLivre`, `idRole`) VALUES (0,9782070755899,1);
+INSERT INTO `auteur`(`idPersonne`, `idLivre`, `idRole`) VALUES (1,9782070253173,1);
+INSERT INTO `auteur`(`idPersonne`, `idLivre`, `idRole`) VALUES (5,9791020318220,1);
+INSERT INTO `auteur`(`idPersonne`, `idLivre`, `idRole`) VALUES (4,9791020318176,1);
+INSERT INTO `auteur`(`idPersonne`, `idLivre`, `idRole`) VALUES (2,9782081487000,1);
+INSERT INTO `auteur`(`idPersonne`, `idLivre`, `idRole`) VALUES (3,9782081487024,1);
+
+INSERT INTO `editeur`(`id`,`libelle`) VALUES (1,"baudelaire");
+INSERT INTO `editeur`(`id`, `libelle`) VALUES (2,"flammarion");
+INSERT INTO `editeur`(`id`, `libelle`) VALUES (3,"gallimard");
+
+INSERT INTO `genre`(`id`, `libelle`) VALUES (1, "Littérature classique");
+INSERT INTO `genre`(`id`, `libelle`) VALUES (2, "développement personnel");
+
+INSERT INTO `langue`(`id`, `libelle`) VALUES (1, "français");
+
+INSERT INTO `livre`(`isbn`, `titre`, `editeur`, `annee`, `genre`, `langue`, `nbpages`) VALUES (9782070755899, "Le Petit Prince", 3, 1999, 1, 1, 104);
+INSERT INTO `livre`(`isbn`, `titre`, `editeur`, `annee`, `genre`, `langue`, `nbpages`) VALUES (9782070253173, "Zazie dans le métro", 3, 1959, 1, 1, 264);
+INSERT INTO `livre`(`isbn`, `titre`, `editeur`, `annee`, `genre`, `langue`, `nbpages`) VALUES (9791020318220, "Transformer son esprit pour changer sa vie", 1, 2018, 2, 1, 208);
+INSERT INTO `livre`(`isbn`, `titre`, `editeur`, `annee`, `genre`, `langue`, `nbpages`) VALUES (9791020318176, "Intelligence énergétique - Le secret du bien-être", 1, 2019, 2, 1, 144);
+INSERT INTO `livre`(`isbn`, `titre`, `editeur`, `annee`, `genre`, `langue`, `nbpages`) VALUES (9782081487000, "Robinson Crusoé", 2, 2019, 1, 1, 384);
+INSERT INTO `livre`(`isbn`, `titre`, `editeur`, `annee`, `genre`, `langue`, `nbpages`) VALUES (9782081487024, "L'Île au trésor" , 2, 2019, 1, 1, 352);
+
+INSERT INTO `personne`(`id`, `nom`, `prenom`) VALUES (1, "antoire", "de saint-Exupéry");
+INSERT INTO `personne`(`id`, `nom`, `prenom`) VALUES (2, "raymond", "queneau");
+INSERT INTO `personne`(`id`, `nom`, `prenom`) VALUES (3, "daniel", "defoe");
+INSERT INTO `personne`(`id`, `nom`, `prenom`) VALUES (4, "robert Louis", "stevenson");
+INSERT INTO `personne`(`id`, `nom`, `prenom`) VALUES (5, "martine M.L", "negro");
+INSERT INTO `personne`(`id`, `nom`, `prenom`) VALUES (6, "michèle", "Chouan");
+
+INSERT INTO `role`(`id`, `libelle`) VALUES (1, "auteur");
