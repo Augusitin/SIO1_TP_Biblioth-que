@@ -5,7 +5,7 @@ INSERT INTO `auteur`(`idPersonne`, `idLivre`, `idRole`) VALUES (4,9791020318176,
 INSERT INTO `auteur`(`idPersonne`, `idLivre`, `idRole`) VALUES (2,9782081487000,1);
 INSERT INTO `auteur`(`idPersonne`, `idLivre`, `idRole`) VALUES (3,9782081487024,1);
 
-INSERT INTO `editeur`(`id`,`libelle`) VALUES (1,"baudelaire");
+INSERT INTO `editeur`(`libelle`) VALUES ("baudelaire"); //Exemple
 INSERT INTO `editeur`(`id`, `libelle`) VALUES (2,"flammarion");
 INSERT INTO `editeur`(`id`, `libelle`) VALUES (3,"gallimard");
 

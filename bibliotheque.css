@@ -17,11 +17,18 @@ a{
 header {
 	width: auto;
 	height: 10em;
-	background-color: rgba(135,206,250,1);
 	text-align: center;
 	vertical-align: middle;
 	grid-area: header;
 	
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1em;
 }
 
 nav {
@@ -35,17 +42,47 @@ main {
 }
  
 #menu_accueil{
-	list-style: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
 }
 
-#menu_accueil li:hover{
-	background-color: rgba(220, 220, 220,1);
-	transition: background-color 1s ease-out;
-	color: rgba(218, 165, 32, 1);
+#menu_accueil li{
+	float: left;
+}
+
+#menu_accueil a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
  }
  
  #menu_accueil li a:hover{
-	color: rgba(218, 165, 32, 1);
+	background-color: #111;
+ }
+ 
+ #collection {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: space-between;
+ }
+ 
+ .livre {
+	width: 400px;
+	height: 500px;
+	border: 10px dotted grey;
+	margin-bottom: 3%;
+ }
+ 
+ .livre img {
+	 width: 60%;
+	 height: 75%;
  }
  
 footer {
